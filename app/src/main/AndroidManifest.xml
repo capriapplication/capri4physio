@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sundroid.capri4physio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterationActivity" />
+        <activity android:name=".activity.StudentDashboardActivity" />
+        <activity android:name=".activity.AdminDashBoardActivity" />
+        <activity android:name=".activity.CourseActivity" />
+        <activity android:name=".activity.ListCourseStudentsActivity" />
+        <activity android:name=".activity.UpdateCourceActivity" />
+        <activity android:name=".activity.AddNewCourseActivity" />
+        <activity android:name=".activity.AttendanceDateActivity" />
+        <activity android:name=".activity.SelectCourseActivity" />
+        <activity android:name=".activity.StudentCourseStatusActivity" />
+        <activity android:name=".activity.AddApplicationFormActivity" />
+        <activity android:name=".activity.PayUMoneyActivity" />
+        <activity android:name=".activity.ImageViewActivity" />
+        <activity android:name=".activity.StudentCourseViewActivity" />
+        <activity android:name=".activity.CourseStudentListActivity" />
+        <activity android:name=".activity.IssueCertifcateActivity" />
+        <activity android:name=".activity.IncomeReportPrintActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.sundroid.capri4physio.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.RegistrationActivity" />
+
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".activity.AllStudentChatActivity" />
+        <activity android:name=".activity.BillingCourseListActivity" />
+        <activity android:name=".activity.StudentBillActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "878268445038",
+    "firebase_url": "https://capri4physio-3c625.firebaseio.com",
+    "project_id": "capri4physio-3c625",
+    "storage_bucket": "capri4physio-3c625.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878268445038:android:76fbfe953ce6329f",
+        "android_client_info": {
+          "package_name": "com.sundroid.capri4physio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878268445038-47s4dbnva78kd9dh49balnihfa2k4t7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sundroid.capri4physio",
+            "certificate_hash": "728aad18cc8dd9985b09a679fb5c0c0b81a1ccc6"
+          }
+        },
+        {
+          "client_id": "878268445038-t0f9auh4gnsv7of6t2hbtcm70l7n2ojp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK2CcjqR1w5NwVN_ZKxHpecUAphnp6eAc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878268445038-t0f9auh4gnsv7of6t2hbtcm70l7n2ojp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
