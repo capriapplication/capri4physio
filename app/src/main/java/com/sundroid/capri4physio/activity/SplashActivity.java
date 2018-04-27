@@ -13,6 +13,9 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 import com.sundroid.capri4physio.R;
 import com.sundroid.capri4physio.Util.Pref;
 import com.sundroid.capri4physio.Util.StringUtils;
@@ -35,6 +38,10 @@ public class SplashActivity extends AppCompatActivity {
         if (checkAndRequestPermissions()) {
             makesplash();
         }
+
+        AppCenter.start(getApplication(), "414e83c9-7083-442e-b868-e89a8680fec8",
+                Analytics.class, Crashes.class);
+        AppCenter.start(getApplication(), "414e83c9-7083-442e-b868-e89a8680fec8", Analytics.class, Crashes.class);
     }
 
     @Override
